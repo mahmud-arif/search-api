@@ -1,0 +1,22 @@
+{
+  "name": "search-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "bull": "^3.12.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "generic-pool": "^3.7.1",
+    "puppeteer": "^2.0.0",
+    "webworker-threads": "^0.7.17"
+  }
+}
