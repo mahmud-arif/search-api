@@ -2,7 +2,6 @@ const browserPagePool = require('./services/browserPagePool');
 
 
 const search = async term => {
-  console.log('dkfjdk'); 
   const page = await browserPagePool.acquire();
   console.log(await browserPagePool.size);
   await page.goto('https://duckduckgo.com/?t=hk', { waitUntil: "networkidle0" });
@@ -15,7 +14,6 @@ const search = async term => {
     return selector.map(a => a.textContent); 
   }); 
   await browserPagePool.release(page);
-  console.log(browserPagePool.size); 
   return result; 
 }
 
